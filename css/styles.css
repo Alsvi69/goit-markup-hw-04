@@ -7,6 +7,9 @@
   --title-color: #2e2f42;
   --background-color-white: #ffffff;
   --cornflower: #e7e9fc;
+  --grey: rgba(46, 47, 66, 0.702);
+  --cloud: #f4f4fd;
+  --lightslate: #8e8f99;
 }
 /* Others */
 /* html {
@@ -221,6 +224,11 @@ img {
 .hero-section {
   background-color: var(--title-color);
   padding: 188px 0;
+  background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
+    url(../images/people-office-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   font-weight: 700;
@@ -266,6 +274,17 @@ img {
 }
 .features-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
+}
+.features-icon-thumb {
+  /* width: 264px; */
+  height: 112px;
+  display: flex;
+  /* flex-shrink: 0; */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: var(--cloud);
 }
 .features-title {
   font-weight: 500;
@@ -348,6 +367,65 @@ img {
   letter-spacing: 0.02em;
   color: var(--paragraph-color);
 }
+/* Customers-section */
+.customers-section {
+  background-color: var(--background-color-white);
+  padding: 120px 0 120px 0;
+}
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+.customers-title {
+  /* display: block; */
+  font-size: 36px;
+  line-height: 1.11;
+  font-family: Roboto;
+  font-weight: 700;
+  color: var(--title-color);
+  letter-spacing: 0.72px;
+  text-align: center;
+  text-transform: capitalize;
+  padding-bottom: 72px;
+}
+.customers-thumb {
+  /* display: flex;
+  width: 168px;
+  height: 88px;
+  border-radius: 4px;
+  border: 1px solid var(--lightslate);
+  align-items: center;
+  justify-content: center; */
+}
+.customers-item {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+.customers-item-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--lightslate);
+  color: var(--lightslate);
+  align-items: center;
+  justify-content: center;
+}
+/* .customers-icon {
+  fill: var(--lightslate);
+}
+.customers-icon:hover {
+  color: var(--dark-blue-color);
+} */
+.customers-item-link:hover,
+.customers-item-link:focus {
+  border-color: var(--dark-blue-color);
+  color: var(--dark-blue-color);
+}
+/* .customers-thumb:hover {
+  color: var(--dark-blue-color);
+} */
+
 /*Footer*/
 .page-footer {
   background-color: var(--title-color);

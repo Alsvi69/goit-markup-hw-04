@@ -411,12 +411,12 @@ img {
   align-items: center;
   justify-content: center;
 }
-/* .customers-icon {
-  fill: var(--lightslate);
+.customers-icon {
+  fill: currentColor;
 }
 .customers-icon:hover {
   color: var(--dark-blue-color);
-} */
+}
 .customers-item-link:hover,
 .customers-item-link:focus {
   border-color: var(--dark-blue-color);

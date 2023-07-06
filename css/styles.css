@@ -521,6 +521,8 @@ img {
   flex-basis: calc(
     (100% - var(--indent-vertical) * (var(--items) - 1)) / var(--items)
   );
+  position: relative;
+  overflow: hidden;
 }
 .card-description {
   padding: 32px 16px;
@@ -542,6 +544,32 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--paragraph-color);
+}
+
+/* Overlay description */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay-description {
+  color: var(--cloud);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  background-color: var(--logo-color);
+  width: 100%;
+  height: 300px;
+  padding: 40px 32px 164px 32px;
+}
+.card-set-item:hover .overlay {
+  transform: translateY(0);
 }
 
 /*Footer*/

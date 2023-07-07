@@ -568,6 +568,9 @@ img {
   height: 300px;
   padding: 40px 32px 164px 32px;
 }
+.card-image-block {
+  /* transform: translateY(0); */
+}
 .card-set-item:hover .overlay {
   transform: translateY(0);
 }
@@ -685,11 +688,16 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn-close:hover {
-  background-color: var(--dark-blue-color);
-  border: none;
+.modal-icon {
+  fill: var(--title-color);
+}
+.modal-btn-close:hover .modal-icon,
+.modal-btn-close:focus .modal-icon {
+  fill: var(--background-color-white);
 }
 
-.modal-icon {
-  stroke: var(--title-color);
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+  background-color: var(--dark-blue-color);
+  border: none;
 }

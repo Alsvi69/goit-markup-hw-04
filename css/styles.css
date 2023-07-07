@@ -524,11 +524,35 @@ img {
   position: relative;
   overflow: hidden;
 }
+.card-set-item:hover,
+.card-set-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+} */
 .card-description {
   padding: 32px 16px;
   border-right: 1px solid var(--cornflower);
   border-bottom: 1px solid var(--cornflower);
   border-left: 1px solid var(--cornflower);
+}
+.card-description:hover,
+.card-description:focus {
+  /* border: 1px solid var(--cloud, #f4f4fd);
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08); */
 }
 
 .card-title {
@@ -545,6 +569,13 @@ img {
   letter-spacing: 0.02em;
   color: var(--paragraph-color);
 }
+.card-set-item .card-description:hover {
+  /* border: 1px solid var(--cloud, #f4f4fd);
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08); */
+}
 
 /* Overlay description */
 .overlay {
@@ -558,6 +589,11 @@ img {
   transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.overlay-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 .overlay-description {
   color: var(--cloud);
   font-size: 16px;

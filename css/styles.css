@@ -636,14 +636,13 @@ img {
   width: 100%;
   height: 300px;
   padding: 40px 32px;
+  /* transform: translateY(0%); */
   /* padding: 40px 32px 164px 32px; */
 }
-.card-image-block {
-  /* transform: translateY(0); */
-}
-/* .card-set-item:hover .overlay {
+
+.card-set-item:hover .overlay {
   transform: translateY(0);
-} */
+}
 
 /*Footer*/
 .page-footer {

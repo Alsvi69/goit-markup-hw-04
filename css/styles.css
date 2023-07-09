@@ -641,9 +641,9 @@ img {
 .card-image-block {
   /* transform: translateY(0); */
 }
-.card-set-item:hover .overlay {
+/* .card-set-item:hover .overlay {
   transform: translateY(0);
-}
+} */
 
 /*Footer*/
 .page-footer {
